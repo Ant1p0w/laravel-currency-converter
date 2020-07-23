@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Currency extends Model
 {
-    public function rates(){
-        return $this->hasMany('App\Rate');
+    public function rate(){
+        return $this->hasOne('App\Rate')->latest();
     }
 }
