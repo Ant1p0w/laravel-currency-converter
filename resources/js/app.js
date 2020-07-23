@@ -27,6 +27,18 @@ Vue.component('currency-converter-component', require('./components/CurrencyConv
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import lang from 'element-ui/lib/locale/lang/ru-Ru'
+import locale from 'element-ui/lib/locale'
+
+const axios = require('axios');
+
+// configure language
+locale.use(lang)
+
+Vue.use(ElementUI);
+
 const app = new Vue({
     el: '#app',
 });

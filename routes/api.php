@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/currency', 'CurrencyController@list');
+Route::get('/currency/rates', 'CurrencyController@rates');
